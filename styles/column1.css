@@ -1,0 +1,111 @@
+.column1{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.image{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 1.25rem;
+}
+
+.image-perfil{
+  object-fit: cover;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  border: 2px solid rgba(0, 255, 0, 1);
+  margin-bottom: 1.8rem;
+}
+
+.image h4{
+  font-size: 1.5rem;
+  font-weight: 700;
+} 
+
+.image span{
+  font-size: 0.8rem;
+  margin: 0.5em;
+}
+
+.link ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.link li{
+  list-style: none;
+}
+
+.link p{
+  display: block;
+  font-size: 12px;
+}
+
+.link a{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+.link img{
+  height: 1.5;
+  width: 1.5;
+}
+
+.experiencia ul{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-left: 2.3rem;
+}
+
+.experiencia h4{
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.experiencia p{
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+.experiencia span{
+  font-weight: normal;
+  font-size: 0.75rem;
+}
+
+.experiencia li h5{
+  font-size: 0.8rem;
+}
+
+.tecnology h4{
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 1.8rem;
+}
+
+.buttons{
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding-left: 1rem;
+}
+
+.btn{
+  border-radius: 1.8rem;
+  background-color: var(--bg-techs);
+  border: none;
+  height: 1.5rem;
+  width: 5.3rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.6rem;
+  cursor: pointer;
+}
