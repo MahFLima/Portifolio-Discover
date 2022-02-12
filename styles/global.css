@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --body-bg-color: #22212C;
+  --text-color: #837E9F;
+  --bg-cards: #302F3D;
+  --bg-techs: #CB92B1;
+}
+
+body{
+  background-color: var(--body-bg-color);
+  font-family: Merriweather, sans-serif;
+  color: var(--text-color);
+
+}
+
+main{
+  display: grid;
+  grid-template: "column1 column2";
+  grid-template-columns: 30% 70%;
+  padding: 2rem;
+  grid-gap: 1rem;
+}
+
+.column1{
+  grid-area: column1;
+  height: 500px;
+}
+
+.column2{
+  grid-area: column2;
+  height: 500px;
+}
+
+.card{
+  background-color: var(--bg-cards);
+  border-radius: 20px;
+  padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
