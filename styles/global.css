@@ -19,21 +19,13 @@ body{
 }
 
 main{
-  display: grid;
-  grid-template: "column1 column2";
-  grid-template-columns: 30% 70%;
+  display: flex;
   padding: 2rem;
-  grid-gap: 1rem;
+  gap: 1rem;
 }
 
 .column1{
-  grid-area: column1;
-  height: 500px;
-}
-
-.column2{
-  grid-area: column2;
-  height: 500px;
+  flex-basis: 30rem;
 }
 
 .card{
@@ -42,6 +34,20 @@ main{
   padding: 2rem;
 }
 
+footer{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+footer p{
+  font-size: 0.8rem;
+}
+
+a{
+  text-decoration: none;
+  color: var(--text-color);
+}
 
 
 

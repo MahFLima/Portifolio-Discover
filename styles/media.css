@@ -1,0 +1,17 @@
+@media (max-width: 700px){
+  main{
+    flex-direction: column;
+  }
+}
+
+@media(max-width: 590px){
+  main{
+    padding: 1.5rem;
+  }
+  .repositorio, .post{
+    flex-direction: column;
+  }
+  .post{
+    align-items: center;
+  }
+}

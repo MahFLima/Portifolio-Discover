@@ -29,11 +29,84 @@
 .rep{
   display: flex;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 1.5rem;
 }
 
 .rep-title{
   display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.rep-title h4{
+  font-size: 1rem;
+}
+
+.rep-title img{
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.rep p{
+  font-size: 0.9rem;
+}
+
+.rep-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rep-info p{
+  font-size: 0.8rem;
+}
+
+.rep-react{
+  display: flex;
+  gap: 1.5rem;
+}
+.rep-react span{
+  display: flex;
   gap: 0.5rem;
   align-items: center;
+}
+
+.post{
+  display: flex;
+  gap: 1rem;
+}
+
+.image-post{
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.post-info{
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.post-info h4{
+  font-size: 1.12rem;
+}
+
+.post-info span{
+  font-size: 0.8rem;
+  padding-bottom: 1rem;
+}
+
+.post-info p{
+  font-size: 1rem;
+}
+
+.post-tecnology{
+  display: flex;
+  gap: 1.5rem;
+}
+
+.post-tecnology p{
+  font-size: 0.8rem;
 }

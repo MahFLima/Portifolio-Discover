@@ -12,60 +12,57 @@
   <link rel="stylesheet" href="./styles/global.css">
   <link rel="stylesheet" href="./styles/column1.css">
   <link rel="stylesheet" href="./styles/column2.css">
+  <link rel="stylesheet" href="./styles/media.css">
   <title>Portifolio | Mariana Lima</title>
 </head>
 
 <body>
+  <script src="js/svg-image.js"></script>
   <main>
     <section class="column1">
-      <div class="image card">
-        <img src="https://source.unsplash.com/random" alt="" class="image-perfil">
-        <h4>Mariana Lima</h4>
-        <span>Full Stack Developer</span>
+      <div class="content-image card">
+        <!-- Conteudo adicionado com innerHTML -->
+        <!-- <img src="https://source.unsplash.com/random" alt="" class="image-perfil"> -->
+        <!-- <h4 id="name">Mariana Lima</h4>
+        <span id="bio">Full Stack Developer</span> -->
       </div>
       <div class="link card">
         <nav>
           <ul>
             <li>
               <a href="#">
-                <img class="img-svg" src="./assets/map-pin.svg">
+                <img onload="fetchSvg(this)" class="img-svg" src="./assets/map-pin.svg">
                 <p>Brasil</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="./assets/briefcase.svg">
-                <p>Rocketseat</p>
+              <a target="_blank" href="https://www.digisystem.com.br">
+                <img onload="fetchSvg(this)" src="./assets/briefcase.svg">
+                <p>Digisystem</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="./assets/github.svg">
+              <a target="_blank" href="https://github.com/MahFLima">
+                <img onload="fetchSvg(this)" src="./assets/github.svg">
                 <p>MahFLima</p>
               </a>
             </li>
             <li>
-              <a href="#">
-                <img src="assets/linkedin.svg">
-                <p>Mariana Lima</p>
+              <a target="_blank" href="https://www.linkedin.com/in/mariana-ferreira-lima">
+                <img onload="fetchSvg(this)" src="assets/linkedin.svg">
+                <p>Mariana Ferreira Lima</p>
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://twitter.com/Mariana88654">
+                <img onload="fetchSvg(this)" src="assets/twitter.svg">
+                <p>@Mariana88654</p>
               </a>
             </li>
             <li>
               <a href="#">
-                <img src="assets/twitter.svg">
-                <p>MarianaLima</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="assets/globe.svg">
-                <p>https://mahflima.com</p>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="assets/mail.svg">
-                <p>marilima.dev@gmail.com</p>
+                <img onload="fetchSvg(this)" src="assets/mail.svg">
+                <p>mariana.lima@email.com</p>
               </a>
             </li>
           </ul>
@@ -75,38 +72,35 @@
         <h4>Tecnologias</h4>
         <div class="buttons">
           <button href="#" class="btn">JavaScript</button>
-          <button href="#" class="btn">JavaScript</button>
-          <button href="#" class="btn">JavaScript</button>
-          <button href="#" class="btn">JavaScript</button>
-          <button href="#" class="btn">JavaScript</button>
-          <button href="#" class="btn">JavaScript</button>
-          <button href="#" class="btn">JavaScript</button>
-          <button href="#" class="btn">JavaScript</button>
-          <button href="#" class="btn">JavaScript</button>
+          <button href="#" class="btn">HTML</button>
+          <button href="#" class="btn">CSS</button>
+          <button href="#" class="btn">SCSS</button>
+          <button href="#" class="btn">Node.js</button>
+          <button href="#" class="btn">TypeScript</button>
         </div>
       </div>
       <div class="experiencia card">
         <h4>Experiências</h4>
         <ul>
           <li>
-            <h5>Rocketseat</h5>
-            <span>2019 - Atualmente</span>
-            <p>Community Experience</p>
+            <a target="_blank" href="https://www.digisystem.com.br"><h5>Digisystem</h5></a>
+            <span>2021 - Atualmente</span>
+            <p>Técnico de Suporte N1</p>
           </li>
           <li>
-            <h5>Rocketseat</h5>
-            <span>2019 - Atualmente</span>
-            <p>Community Experience</p>
+            <a target="_blank" href="https://www.montreal.com.br"><h5>Montreal</h5></a>
+            <span>2020 - 2021</span>
+            <p>Estagio suporte local</p>
           </li>
           <li>
-            <h5>Rocketseat</h5>
-            <span>2019 - Atualmente</span>
-            <p>Community Experience</p>
+            <a target="_blank" href="https://www.prefeitura.sp.gov.br/cidade/secretarias/fazenda/iprem/"><h5>IPREM</h5></a>
+            <span>2018 - 2020</span>
+            <p>Estagio de suporte de informática</p>
           </li>
           <li>
-            <h5>Rocketseat</h5>
-            <span>2019 - Atualmente</span>
-            <p>Community Experience</p>
+            <a href="https://ts.sp.gov.br/" target="_blank"><h5>Prefeitura Municipal de Taboão da Serra</h5></a>
+            <span>2017 - 2018</span>
+            <p>Estagio de suporte de informática</p>
           </li>
         </ul>
         </h4>
@@ -115,24 +109,24 @@
         <h4>Educação</h4>
         <ul>
           <li>
-            <h5>Rocketseat</h5>
-            <span>2018 - 2019</span>
-            <p>Discover</p>
+            <a target="_blank" href="https://cursos.alura.com.br/certificate/a3ebff65-80fb-4453-bb4b-f1175609eaa7"><h5>Alura</h5></a>
+            <span>2021</span>
+            <p>Sass e Compass: Descomplicando o CSS</p>
           </li>
           <li>
-            <h5>Rocketseat</h5>
-            <span>2020 - 2021</span>
-            <p>Ignite</p>
+            <a target="_blank" href="https://cursos.alura.com.br/certificate/22a50fba-b35d-40ef-a67f-40e101423d1c"><h5>Alura</h5></a>
+            <span>2021</span>
+            <p>JavaScript: primeiros passos com a linguagem</p>
           </li>
           <li>
-            <h5>Rocketseat</h5>
-            <span>2021 - 2021</span>
-            <p>Ignite pro</p>
+            <a target="_blank" href="https://dio.me/certificate/A361EADD/share"><h5>Digital Innovation One</h5></a>
+            <span>2021</span>
+            <p>Desafio de Código em JavaScrip</p>
           </li>
           <li>
-            <h5>Rocketseat</h5>
-            <span>2022</span>
-            <p>Ignite pro</p>
+            <a target="_blank" href="https://dio.me/certificate/9935F4C1/share"><h5>Digital Innovation One</h5></a>
+            <span>2021</span>
+            <p>Bootstrap</p>
           </li>
         </ul>
         </h4>
@@ -141,30 +135,74 @@
     <section class="column2">
       <div class="card project">
         <h4>My Projects</h4>
-        <a href="#">Veja Todos</a>
+        <a target="_blank" href="https://github.com/MahFLima">Veja Todos</a>
       </div>
       <div class="repositorio">
         <div class="rep card">
-          <span class="rep-title">
-            <img src="assets/folder.svg"/>
-            <h4>my-onix</h4>
-          </span>
-          <p>Consulte os codigos de erro que aparecem no painel do veículo Onix</p>
+          <a target="_blank" href="https://github.com/MahFLima/Desafio-HTML/" class="rep-title">
+            <img onload="fetchSvg(this)" src="assets/folder.svg" />
+            <h4>Desafio-HTML</h4>
+          </a>
+          <p>Essa é uma série de desafios basicos feitos em HTML, CSS e JavaScript</p>
           <span class="rep-info">
-            <span>
-              <p>100</p>
-              <p>100</p>
-            </span>
-            <p>JavaScript</p>
+            <div class="rep-react">
+              <span>
+                <img onload="fetchSvg(this)" src="assets/star.svg"/>
+                <p>0</p>
+              </span>
+              <span>
+                <img onload="fetchSvg(this)" src="assets/git-branch.svg"/>
+                <p>0</p>
+              </span>
+            </div>
+            <p>HTML, CSS, JavaScript</p>
           </span>
         </div>
         <div class="rep card">
-          <h4>my-onix</h4>
-          <p>Consulte os codigos de erro que aparecem no painel do veículo Onix</p>
+          <a target="_blank" href="https://github.com/MahFLima/Desafio-HTML/" class="rep-title">
+            <img onload="fetchSvg(this)" src="assets/folder.svg" />
+            <h4>Desafio-HTML</h4>
+          </a>
+          <p>Essa é uma série de desafios basicos feitos em HTML, CSS e JavaScript</p>
+          <span class="rep-info">
+            <div class="rep-react">
+              <span>
+                <img onload="fetchSvg(this)" src="assets/star.svg"/>
+                <p>0</p>
+              </span>
+              <span>
+                <img onload="fetchSvg(this)" src="assets/git-branch.svg"/>
+                <p>0</p>
+              </span>
+            </div>
+            <p>HTML, CSS, JavaScript</p>
+          </span>
+        </div>
+
+      </div>
+      <div class="card project">
+        <h4>Recent Posts</h4>
+      </div>
+      <div class="card post">
+        <img class="image-post" src="https://source.unsplash.com/random" alt="">
+        <div class="post-info">
+          <h4>Principal postagem (React Native)</h4>
+          <span>2 anos atrás</span>
+          <p>Principal postagem (React Native)</p>
+          <div class="post-tecnology">
+            <p>#react-native</p>
+            <p>#typescript</p>
+            <p>#css</p>
+            <p>#firebase</p>
+          </div>
         </div>
       </div>
     </section>
   </main>
+  <footer>
+    <p>Feito por MahFLima</p>
+  </footer>
+  <script src="js/xhr.js"></script>
 </body>
 
 </html>
