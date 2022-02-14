@@ -3,6 +3,7 @@ var documento
 const perfilName = document.getElementById("name")
 const perfilBio = document.getElementById("bio")
 const perfilImage = document.querySelector(".content-image")
+const postImage = document.querySelector(".container-image")
 
 xhr.responseType = "json"
 
@@ -19,6 +20,10 @@ xhr.onreadystatechange = function(){
       <img src=${avatar_url} alt="" class="image-perfil">
       <h4 id="name">${name}</h4>
       <span id="bio">${bio}</span>
+    `
+
+    postImage.innerHTML = `
+    <img class="image-post" src=${avatar_url} alt="">
     `
 
   }
