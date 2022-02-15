@@ -21,4 +21,4 @@
 
 # Layout
 
-<p>Você pode visualizar o layout do projeto</p>
+<p>Você pode visualizar o layout do projeto através<a href="https://www.figma.com/file/L6fCiWtOgXCfslQdezqQeF/DD-%2F-Portfolio/duplicate"> desse link</a></p>
